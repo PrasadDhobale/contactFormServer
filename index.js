@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
     text: `Contact Form Details \n\nName : ${name}\nEmail : ${uemail}\nSubject : ${usubject}\nBody : ${umsg}`
   };
 
-  // res.send(`OwnerEmail : ${email}\nName: ${name}\nemail: ${uemail}\nsubject : ${usubject}\numsg : ${umsg}\nUrl : ${url}`);
+  console.log(`OwnerEmail : ${email}\nName: ${name}\nemail: ${uemail}\nsubject : ${usubject}\numsg : ${umsg}\nUrl : ${url}`);
 
 
   transporter.sendMail(mailOptions, function (error, info) {
